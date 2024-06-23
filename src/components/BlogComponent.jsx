@@ -16,7 +16,7 @@ const Blog = () => {
 
     const fetchPost = async () => {
         try {
-            const response = await fetch(`http://localhost:8080/api/posts/${id}`);
+            const response = await fetch(` https://ntc-website-backend-1.onrender.com/api/posts/${id}`);
             if (response.ok) {
                 const data = await response.json();
                 setPost(data);
@@ -99,7 +99,7 @@ const BlogPost = ({ post, fetchPost }) => {
         if (commentText.trim()) {
             const newComment = { userId: user.id, text: commentText };
             try {
-                const response = await fetch(`http://localhost:8080/api/posts/${post.id}/comment/${user.id}`, {
+                const response = await fetch(` https://ntc-website-backend-1.onrender.com/api/posts/${post.id}/comment/${user.id}`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -158,7 +158,7 @@ const BlogPost = ({ post, fetchPost }) => {
 
     const deletePost = async () => {
         try {
-            const response = await fetch(`http://localhost:8080/api/posts/${post.id}`, {
+            const response = await fetch(` https://ntc-website-backend-1.onrender.com/api/posts/${post.id}`, {
                 method: 'DELETE',
             });
 

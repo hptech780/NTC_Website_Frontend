@@ -4,7 +4,7 @@ import axios from 'axios'
 export const apiClient = axios.create(
 
     {
-        baseURL:'http://localhost:8080'
+        baseURL:' https://ntc-website-backend-1.onrender.com'
     }
 )
 export const setLikesToPosts = (user_id, post_id)=>{

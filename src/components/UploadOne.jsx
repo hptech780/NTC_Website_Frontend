@@ -55,7 +55,7 @@ const Upload = () => {
     formData.append('photoFile', input.photo);
 console.log(input);
     try {
-      const response = await fetch(`http://localhost:8080/api/posts/${user.id}`, { // Change the URL and userId as necessary
+      const response = await fetch(` https://ntc-website-backend-1.onrender.com/api/posts/${user.id}`, { // Change the URL and userId as necessary
         method: 'POST',
         body: formData,
       });

@@ -14,7 +14,7 @@ const BlogPosts = () => {
   
   const storeUserData = async () => {
     try {
-      const response = await fetch('http://localhost:8080/api/users', {
+      const response = await fetch(' https://ntc-website-backend-1.onrender.com/api/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const BlogPosts = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/posts');
+        const response = await fetch(' https://ntc-website-backend-1.onrender.com/api/posts');
         if (response.ok) {
           const data = await response.json();
           setPosts(data);
