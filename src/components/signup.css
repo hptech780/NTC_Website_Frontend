@@ -1,0 +1,119 @@
+:root {
+    --background-color: blue,
+
+}
+
+
+
+
+.container_2 {
+
+    margin: 0px 0px;
+    padding: 0;
+    background-image: linear-gradient(rgb(133, 128, 128), rgb(19, 113, 132));    
+
+
+}
+
+.signup-container .container-body {
+
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 40%;
+    margin: 2px;
+    display: flexbox;
+    justify-content: center;
+    background-color: #9DBC98;
+    padding: 0px;
+}
+
+.signup-image {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 40px;
+    left: 50%;
+    z-index: 1;
+    /* Ensure the image is behind the form */
+
+}
+
+.signup-image img {
+    margin-top: 15%;
+    height: auto;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+}
+.signup-image p{
+    color: black;
+    font-weight: bold;
+}
+
+.text-overlay{
+    text-align: center;
+    color: black;
+  
+    
+}
+
+
+
+
+.field {
+
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    align-items: left;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 2px;
+    gap: 2px;
+    width: 100%;
+
+}
+
+
+input {
+    margin: 5px;
+    justify-content: flex-start;
+    flex: 1;
+    border: 1px solid #dddfe2;
+    font-size: 17px;
+    border-radius: 5px;
+    color: #1d2129;
+    outline-color: #8AB7EF;
+    padding: 6px 8px;
+    width: 80%;
+
+}
+
+.submit {
+    font-size: 20px;
+    color: #fff;
+    line-height: 48px;
+    padding: 0 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    letter-spacing: 0.25;
+    width: max-content;
+}
+
+
+.signup-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    box-shadow: none;
+    width: 100%;
+    gap: 5;
+    padding: 20px 0 28px;
+}

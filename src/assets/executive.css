@@ -1,0 +1,43 @@
+/* Custom styles for ExecutiveTeam component */
+
+#executives-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .executive-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .executive-card-content {
+    text-align: center;
+  }
+  
+  .executive-card-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .executive-card-content p {
+    color: #4b5563; /* Gray 600 */
+    margin-bottom: 0.5rem;
+  }
+  
+  .executive-card-content a {
+    color: #4b5563; /* Gray 600 */
+    transition: color 0.3s ease;
+  }
+  
+  .executive-card-content a:hover {
+    color: #6b7280; /* Gray 700 */
+  }
+  
+  .executive-card-content svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.25rem;
+  }
+  

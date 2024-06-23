@@ -1,0 +1,203 @@
+/* Container Styles */
+.container_1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Blog Post Styles */
+.blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Post Header Styles */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.post-time {
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Post Body Styles */
+.post-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto 20px auto;
+}
+
+.post-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    padding:15px;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none
+}
+.read-more:hover {
+   background-color:rgb(192, 191, 191);
+   color:black;
+    border-radius: 30px;
+}
+/* Post Actions Styles */
+.post-actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.likes {
+    margin-right: 10px;
+}
+
+button {
+    /* Pink background for buttons */
+     color: #fff; /* Text color for buttons */
+     border: none; /* No border */
+     padding: 0.75rem 1.5rem; /* Padding for buttons */
+     border-radius: 30px; /* Rounded corners for buttons */
+     cursor: pointer; /* Pointer cursor on hover */
+     transition: background-color 0.3s, color 0.3s;
+    /* Smooth transitions */
+ }
+
+ button:hover{
+    background-color: #007bff;
+}
+
+ .like-button,.comment-button, .share-button, .delete-button {
+    background-color: #6c757d;
+    border:1px solid white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+   margin:40px;
+}
+
+
+.submit-comment {
+    background-color: #28a745;
+}
+
+/* Comment Box Styles */
+.comment-box {
+    display: flex;
+    align-items: center;
+   
+}
+
+.comment-box input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Comments Section Styles */
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-content {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+.comment-user-name {
+    font-weight: bold;
+}
+
+.comment-time {
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Share Options Styles */
+.share-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.share-option {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .post-title {
+        font-size: 1.8em;
+    }
+
+    .post-description {
+        font-size: 1em;
+    }
+
+    .button, .submit-comment {
+        padding: 8px 16px;
+    }
+}
